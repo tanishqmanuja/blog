@@ -1,0 +1,10 @@
+{
+  "prettier.configPath": ".prettierrc.cjs",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  }
+}
