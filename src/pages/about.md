@@ -3,12 +3,9 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
+## Hi, Tanishq Manuja
 
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
-
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
+I am a dedicated Full-Stack Web Developer with a knack for crafting digital experiences that seamlessly blend functionality and aesthetics. With a keen eye for detail and a strong foundation in both front-end and back-end technologies, I thrive on turning ideas into dynamic, user-friendly web applications.
 
 <div>
   <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
@@ -16,21 +13,13 @@ This theme is self-documented \_ which means articles/posts in this theme can al
 
 ## Tech Stack
 
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
+My beloved tech stack :)
 
-## Features
+- Front End: HTML, CSS ,JS
+- Front End Frameworks and Libs: Angular, Ionic, Capacitor
+- Back End: NodeJS, BunJS, Typesript
+- Back End Frameworks and Libs: Express, Mongoose, Drizzle
+- Database: mySQL, MongoDB, Redis
+- Tooling: Git, Docker
 
-Here are certain features of this site.
-
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
-
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
+Feel free to contact me via [email](mailto:tanishqmanuja@gmail.com).
