@@ -93,6 +93,9 @@
   .prose h2#table-of-contents + p {
     @apply hidden;
   }
+  .prose .callout {
+    word-wrap: break-word;
+  }
 
   /* ===== scrollbar ===== */
   html {
