@@ -10,8 +10,8 @@
     "sync": "astro sync",
     "check": "astro check",
     "astro": "astro",
-    "format:check": "prettier --plugin-search-dir=. --check .",
-    "format": "prettier --plugin-search-dir=. --write .",
+    "format:check": "prettier --check .",
+    "format": "prettier --write .",
     "cz": "cz",
     "prepare": "husky install",
     "lint": "eslint ."
@@ -60,7 +60,7 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,md,mdx,json}": [
-      "prettier --plugin-search-dir=. --write"
+      "prettier --write"
     ]
   }
 }
