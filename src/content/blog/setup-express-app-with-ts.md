@@ -1,16 +1,11 @@
 ---
-author: Tanishq Manuja
-pubDatetime: 2023-09-15T05:20:35Z
 title: Setup an Express App with Typescript
-postSlug: ""
-featured: false
-draft: false
+description: How to setup up a boilerplater express app with typescript
+date: 2023-09-15T05:20:35Z
 tags:
   - node
   - express
   - typescript
-ogImage: ""
-description: How to setup up a boilerplater express app with typescript
 ---
 
 This post will explain how to setup up a boilerplater express app with typescript, we will be using pnpm as the package manager.

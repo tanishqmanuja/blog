@@ -8,11 +8,11 @@ export interface Props {
 }
 
 export default function Card({ href, frontmatter, secHeading = true }: Props) {
-  const { title, pubDatetime, description } = frontmatter;
+  const { title, date, description } = frontmatter;
   return (
     <li className="list-card">
       <a href={href}>{secHeading ? <h2>{title}</h2> : <h3>{title}</h3>}</a>
-      <Datetime datetime={pubDatetime} />
+      <Datetime datetime={date} />
       <p>{description}</p>
     </li>
   );

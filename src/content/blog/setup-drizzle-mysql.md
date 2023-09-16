@@ -1,16 +1,11 @@
 ---
-author: Tanishq Manuja
-pubDatetime: 2023-09-15T05:20:35Z
 title: Setup Drizzle ORM with MySQL database
-postSlug: ""
-featured: false
-draft: false
+description: How to setup up boilerplater code for using drizzle orm with mysql in nodejs
+date: 2023-09-16T04:10:35Z
 tags:
   - node
   - drizzle
   - mysql
-ogImage: ""
-description: How to setup up boilerplater code for using drizzle orm with mysql in nodejs
 ---
 
 This post will explain how to use drizzle orm with mysql db in a nodejs app.

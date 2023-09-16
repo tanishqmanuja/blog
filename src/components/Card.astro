@@ -10,13 +10,13 @@ export interface Props {
 
 const { href, frontmatter, secHeading = true } = Astro.props;
 
-const { title, pubDatetime, description } = frontmatter;
+const { title, date, description } = frontmatter;
 ---
 
 <li class="list-card">
   <a href={href} transition:name={title}>
     {secHeading ? <h2>{title}</h2> : <h3>{title}</h3>}
   </a>
-  <Datetime datetime={pubDatetime} />
+  <Datetime datetime={date} />
   <p>{description}</p>
 </li>

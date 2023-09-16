@@ -13,7 +13,7 @@ export interface Props {
 
 const { post } = Astro.props;
 
-const { title, author, description, ogImage, canonicalURL, pubDatetime, tags } =
+const { title, author, description, ogImage, canonicalURL, date, tags } =
   post.data;
 
 const { Content } = await post.render();
@@ -44,7 +44,7 @@ const ogUrl = new URL(ogImage ? ogImage : `${post.slug}.png`, Astro.url.origin)
   </div>
   <main id="main-content">
     <h1 transition:name={title} class="post-title">{title}</h1>
-    <Datetime datetime={pubDatetime} size="lg" className="my-2" />
+    <Datetime datetime={date} size="lg" className="my-2" />
     <article id="article" role="article" class="prose mx-auto mt-8 max-w-3xl">
       <Content />
     </article>
