@@ -33,7 +33,7 @@ Tqblog is my personal blog website designed using [AstroPaper](https://github.co
 **Icons** - [Boxicons](https://boxicons.com/) | [Tablers](https://tabler-icons.io/)  
 **Code Formatting** - [Prettier](https://prettier.io/)  
 **Deployment** - [Cloudflare Pages](https://pages.cloudflare.com/)  
-**Illustration in About Page** - [https://freesvgillustration.com](https://freesvgillustration.com/)  
+**Illustration in About Page** - [freesvgillustration.com](https://freesvgillustration.com/)  
 **Linting** - [ESLint](https://eslint.org)
 
 ## ❤️‍🔥 Infinite Thanks
