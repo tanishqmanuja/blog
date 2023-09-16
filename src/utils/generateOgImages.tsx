@@ -7,13 +7,13 @@ import { getCollection } from "astro:content";
 const fetchFonts = async () => {
   // Regular Font
   const fontFileRegular = await fetch(
-    "https://www.1001fonts.com/download/font/ibm-plex-mono.regular.ttf"
+    "https://www.1001fonts.com/download/font/ibm-plex-mono.regular.ttf",
   );
   const fontRegular: ArrayBuffer = await fontFileRegular.arrayBuffer();
 
   // Bold Font
   const fontFileBold = await fetch(
-    "https://www.1001fonts.com/download/font/ibm-plex-mono.bold.ttf"
+    "https://www.1001fonts.com/download/font/ibm-plex-mono.bold.ttf",
   );
   const fontBold: ArrayBuffer = await fontFileBold.arrayBuffer();
 
@@ -139,10 +139,10 @@ const options: SatoriOptions = {
 const generateOgImages = async () => {
   const postImportResult = await getCollection(
     "blog",
-    ({ data }) => !data.draft
+    ({ data }) => !data.draft,
   );
   const posts = Object.values(postImportResult).filter(
-    ({ data }) => !data.ogImage
+    ({ data }) => !data.ogImage,
   );
 
   const imageGenerationPromises = posts.map(async post => {
@@ -161,7 +161,7 @@ const generateOgImages = async () => {
       const RESET = "\x1b[0m";
       console.info(
         `  ${LIGHT_BLUE}└─${RESET} output png image:`,
-        `${DARK_GRAY}/${outputImage}${RESET}`
+        `${DARK_GRAY}/${outputImage}${RESET}`,
       );
 
       await writeFile(`./dist/${outputImage}`, pngBuffer);

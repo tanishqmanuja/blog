@@ -8,7 +8,7 @@ const getUniqueTags = (posts: CollectionEntry<"blog">[]) => {
     .map(tag => slugifyStr(tag))
     .filter(
       (value: string, index: number, self: string[]) =>
-        self.indexOf(value) === index
+        self.indexOf(value) === index,
     )
     .sort((tagA: string, tagB: string) => tagA.localeCompare(tagB));
   return tags;
