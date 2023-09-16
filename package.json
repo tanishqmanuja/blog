@@ -1,6 +1,6 @@
 {
-  "name": "astro-paper",
-  "version": "2.3.0",
+  "name": "tqblog",
+  "version": "3.0.0",
   "private": false,
   "scripts": {
     "dev": "astro dev",
@@ -8,6 +8,7 @@
     "build": "astro build && jampack ./dist",
     "preview": "astro preview",
     "sync": "astro sync",
+    "check": "astro check",
     "astro": "astro",
     "format:check": "prettier --plugin-search-dir=. --check .",
     "format": "prettier --plugin-search-dir=. --write .",
