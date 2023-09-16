@@ -35,9 +35,12 @@ dependencies:
   github-slugger:
     specifier: ^2.0.0
     version: 2.0.0
-  install:
-    specifier: ^0.13.0
-    version: 0.13.0
+  react:
+    specifier: ^18.2.0
+    version: 18.2.0
+  react-dom:
+    specifier: ^18.2.0
+    version: 18.2.0(react@18.2.0)
   remark-callouts:
     specifier: ^2.0.0
     version: 2.0.0
@@ -97,12 +100,6 @@ devDependencies:
   prettier-plugin-tailwindcss:
     specifier: ^0.5.4
     version: 0.5.4(prettier-plugin-astro@0.12.0)(prettier@3.0.3)
-  react:
-    specifier: ^18.2.0
-    version: 18.2.0
-  react-dom:
-    specifier: ^18.2.0
-    version: 18.2.0(react@18.2.0)
 
 packages:
 
@@ -3645,11 +3642,6 @@ packages:
       through: 2.3.8
       wrap-ansi: 7.0.0
     dev: true
-
-  /install@0.13.0:
-    resolution: {integrity: sha512-zDml/jzr2PKU9I8J/xyZBQn8rPCAY//UOYNmR01XwNwyfhEWObo2SWfSl1+0tm1u6PhxLwDnfsT/6jB7OUxqFA==}
-    engines: {node: '>= 0.10'}
-    dev: false
 
   /is-arrayish@0.2.1:
     resolution: {integrity: sha512-zz06S8t0ozoDXMG+ube26zeCTNXcKIPJZJi8hBrF4idCLms4CG9QtK7qBl1boi5ODzFpjswb5JPmHCbMpjaYzg==}
