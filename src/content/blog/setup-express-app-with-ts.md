@@ -68,6 +68,8 @@ Since we are using ESM (ECMA Script Module) we need to add `"type": "module"` to
 }
 ```
 
+and add a tsconfig.json file to the root of project
+
 ```json title="tsconfig.json"
 {
   "compilerOptions": {
