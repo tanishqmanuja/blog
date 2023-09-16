@@ -5,16 +5,18 @@ import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import remarkCallouts from "remark-callouts";
 import sitemap from "@astrojs/sitemap";
+import { tqblogExpressiveCode } from "./integrations/expressive-code";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://tqblog.pages.dev/", // replace this with your deployed domain
+  site: "https://tqblog.pages.dev/",
   integrations: [
     tailwind({
       applyBaseStyles: false,
     }),
     react(),
     sitemap(),
+    tqblogExpressiveCode(),
   ],
   markdown: {
     remarkPlugins: [
@@ -27,10 +29,6 @@ export default defineConfig({
       ],
       remarkCallouts,
     ],
-    shikiConfig: {
-      theme: "one-dark-pro",
-      wrap: true,
-    },
     extendDefaultPlugins: true,
   },
   vite: {
