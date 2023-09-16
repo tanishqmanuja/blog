@@ -59,9 +59,7 @@ pnpm install -D @types/express
 
 Since we are using ESM (ECMA Script Module) we need to add `"type": "module"` to package.json
 
-```json
-// file: package.json
-
+```json title="package.json" {4}
 {
 	"name": "example-package",
 	"version": "1.0.0",
@@ -70,9 +68,7 @@ Since we are using ESM (ECMA Script Module) we need to add `"type": "module"` to
 }
 ```
 
-```json
-// file: tsconfig.json
-
+```json title="tsconfig.json"
 {
   "compilerOptions": {
     "strict": true,

@@ -53,9 +53,7 @@ export const db = drizzle(connection);
 
 Make single or multiple schema(s) for example:
 
-```ts
-// file: src/db/schema/users.ts
-
+```ts title="src/db/schema/users.ts"
 import { mysqlTable, serial, varchar } from "drizzle-orm/mysql-core";
 
 export const users = mysqlTable("users", {
@@ -66,9 +64,7 @@ export const users = mysqlTable("users", {
 
 ### 4. Generate Migrations
 
-```ts
-// file: drizzle.config.ts
-
+```ts title="drizzle.config.ts"
 import type { Config } from "drizzle-kit";
 
 export default {
@@ -86,9 +82,7 @@ pnpm drizzle-kit generate:mysql
 
 ### 5. Use Migrations in SQL
 
-```ts
-//file: src/migrate.ts
-
+```ts title="src/migrate.ts"
 import { migrate } from "drizzle-orm/mysql2/migrator";
 import { db } from "./db/db";
 
@@ -114,9 +108,7 @@ pnpm tsx src/migrate.ts
 
 ### Insert
 
-```ts
-// file: src/test/insert.ts
-
+```ts title="src/test/insert.ts"
 import { db } from "./db/db";
 import { users } from "./db/schema/users";
 
