@@ -11,9 +11,7 @@ export default defineConfig({
   site: "https://tqblog.pages.dev/", // replace this with your deployed domain
   integrations: [
     tailwind({
-      config: {
-        applyBaseStyles: false,
-      },
+      applyBaseStyles: false,
     }),
     react(),
     sitemap(),
