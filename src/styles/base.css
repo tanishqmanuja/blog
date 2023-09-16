@@ -22,7 +22,7 @@
     --color-card: 52, 63, 96;
     --color-card-muted: 138, 51, 2;
     --color-border: 171, 75, 8;
-    --callout-bg-color: #161616;
+    --callout-bg-color: #2a2b33;
   }
   #sun-svg,
   html[data-theme="dark"] #moon-svg {
@@ -95,6 +95,9 @@
   }
   .prose .callout {
     word-wrap: break-word;
+  }
+  .prose .callout svg {
+    fill: none;
   }
 
   /* ===== scrollbar ===== */
