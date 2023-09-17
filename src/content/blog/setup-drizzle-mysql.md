@@ -16,16 +16,14 @@ This post will explain how to use drizzle orm with mysql db in a nodejs app.
 
 ### 1. Install drizzle
 
-```bash
+```bash frame="none"
 pnpm add drizzle-orm mysql2
 pnpm add -D drizzle-kit
 ```
 
 ### 2. Setup DB Connection
 
-```ts
-// file: src/db/db.ts
-
+```ts title="src/db/db.ts"
 import { drizzle } from "drizzle-orm/mysql2";
 import mysql from "mysql2/promise";
 
@@ -71,7 +69,7 @@ export default {
 
 Command:
 
-```bash
+```bash frame="none"
 pnpm drizzle-kit generate:mysql
 ```
 
@@ -95,7 +93,7 @@ migrate(db, { migrationsFolder: "drizzle" })
 
 Command:
 
-```bash
+```bash frame="none"
 pnpm tsx src/migrate.ts
 ```
 

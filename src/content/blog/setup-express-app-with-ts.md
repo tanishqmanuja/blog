@@ -18,28 +18,28 @@ This post will explain how to setup up a boilerplater express app with typescrip
 
 Initialize the folder as a pnpm project
 
-```bash
+```bash frame="none"
 pnpm init
 ```
 
 ### 2. Install Packages
 
-- Typescript related
+- Install typescript and tsx
 
-```bash
+```bash frame="none"
 pnpm install -D typescript
 pnpm install -D tsx
 ```
 
 - Install @types essential packages
 
-```bash
+```bash frame="none"
 pnpm install -D @types/node
 ```
 
-- Install Express with @types
+- Install Express with it's typings
 
-```bash
+```bash frame="none"
 pnpm install express
 pnpm install -D @types/express
 ```
@@ -82,8 +82,8 @@ and add a tsconfig.json file to the root of project
 
 ### 4. Running ".ts" files
 
-Using tsx as compiler, and internally calls node runtime.
+Using tsx to run typescript file directly without manual transpilation.
 
-```bash
+```bash frame="none"
 pnpm tsx src/index.ts
 ```
