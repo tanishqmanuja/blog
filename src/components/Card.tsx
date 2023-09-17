@@ -1,9 +1,9 @@
+import type { CollectionEntry } from "astro:content";
 import Datetime from "./Datetime";
-import type { BlogFrontmatter } from "@/content/_schemas";
 
 export interface Props {
   href?: string;
-  frontmatter: BlogFrontmatter;
+  frontmatter: CollectionEntry<"blog">["data"];
   secHeading?: boolean;
 }
 
