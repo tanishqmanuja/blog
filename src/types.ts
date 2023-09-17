@@ -4,8 +4,6 @@ export type Site = {
   desc: string;
   title: string;
   ogImage: string;
-  lightAndDarkMode: boolean;
-  postPerPage: number;
 };
 
 export type SocialObjects = {
