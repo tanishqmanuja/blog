@@ -3,9 +3,9 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-## Hi, Tanishq Manuja
+## Tanishq Manuja
 
-I am a dedicated Full-Stack Web Developer with a knack for crafting digital experiences that seamlessly blend functionality and aesthetics. With a keen eye for detail and a strong foundation in both front-end and back-end technologies, I thrive on turning ideas into dynamic, user-friendly web applications.
+Hi 👋, I am a dedicated Full-Stack Web Developer with a knack for crafting digital experiences that seamlessly blend functionality and aesthetics. With a keen eye for detail and a strong foundation in both front-end and back-end technologies, I thrive on turning ideas into dynamic, user-friendly web applications.
 
 <div>
   <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
