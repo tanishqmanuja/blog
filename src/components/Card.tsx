@@ -16,7 +16,7 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
     className: "text-lg font-medium decoration-dashed hover:underline",
   };
   return (
-    <li className="list-card my-6">
+    <li className="my-6">
       <a
         href={href}
         className="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
