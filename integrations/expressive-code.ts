@@ -1,6 +1,7 @@
+import type { AstroIntegration } from "astro";
 import astroExpressiveCode from "astro-expressive-code";
 
-export const tqblogExpressiveCode = () =>
+export const tqblogExpressiveCode = (): AstroIntegration =>
 	astroExpressiveCode({
 		theme: "one-dark-pro",
     styleOverrides: {
