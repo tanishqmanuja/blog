@@ -20,6 +20,12 @@ export const SOCIALS: SocialObjects = [
     active: true,
   },
   {
+    name: "Twitter",
+    href: "https://twitter.com/tanishqmanuja",
+    linkTitle: `${SITE.author} on Twitter`,
+    active: true,
+  },
+  {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/tanishqmanuja/",
     linkTitle: `${SITE.author} on LinkedIn`,
@@ -32,15 +38,9 @@ export const SOCIALS: SocialObjects = [
     active: true,
   },
   {
-    name: "Twitter",
-    href: "https://twitter.com/tanishqmanuja",
-    linkTitle: `${SITE.author} on Twitter`,
-    active: true,
-  },
-  {
     name: "Discord",
-    href: "https://github.com/tanishqmanuja",
-    linkTitle: `${SITE.title} on Discord`,
+    href: "discordapp.com/users/534785364926136323",
+    linkTitle: `${SITE.author} on Discord`,
     active: false,
   },
 ];
