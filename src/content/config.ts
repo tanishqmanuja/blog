@@ -15,8 +15,8 @@ const blog = defineCollection({
         tags: z.array(z.string()).default(["others"]),
         postSlug: z.string().optional(),
         ogImage: image()
-          .refine(img => img.width >= 1200 && img.height >= 640, {
-            message: "OpenGraph image must be at least 1200 X 640 pixels!",
+          .refine(img => img.width >= 1200 && img.height >= 630, {
+            message: "OpenGraph image must be at least 1200 X 630 pixels!",
           })
           .optional(),
         canonicalURL: z.string().url().optional(),
