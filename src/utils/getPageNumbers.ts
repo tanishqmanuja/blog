@@ -1,4 +1,4 @@
-import { POSTS_PER_PAGE } from "@config";
+import { POSTS_PER_PAGE } from "@/config";
 
 const getPageNumbers = (numberOfPosts: number) => {
   const numberOfPages = numberOfPosts / Number(POSTS_PER_PAGE);
