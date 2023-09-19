@@ -2,6 +2,7 @@ import { z, defineCollection } from "astro:content";
 import { SITE } from "@/config";
 
 const blog = defineCollection({
+  type: "content",
   schema: ({ image }) =>
     z
       .object({
@@ -18,7 +19,7 @@ const blog = defineCollection({
             message: "OpenGraph image must be at least 1200 X 640 pixels!",
           })
           .optional(),
-        canonicalURL: z.string().optional(),
+        canonicalURL: z.string().url().optional(),
       })
       .strict(),
 });
