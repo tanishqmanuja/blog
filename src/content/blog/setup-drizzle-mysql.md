@@ -1,7 +1,7 @@
 ---
 title: Setup Drizzle ORM with MySQL database
 description: How to setup up boilerplater code for using drizzle orm with mysql in nodejs
-date: 2023-09-16T04:10:35Z
+date: 2023-09-16T09:00:35Z
 tags:
   - node
   - drizzle

@@ -1,7 +1,7 @@
 ---
 title: Setup an Express App with Typescript
 description: How to setup up a boilerplater express app with typescript
-date: 2023-09-15T05:20:35Z
+date: 2023-09-15T10:00:35Z
 tags:
   - node
   - express
