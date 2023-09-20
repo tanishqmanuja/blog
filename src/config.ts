@@ -1,11 +1,10 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://tqblog.pages.dev/",
-  author: "Tanishq Manuja",
-  desc: "A minimal, responsive and SEO-friendly Astro blog.",
   title: "TqBlog",
-  ogImage: "social-og.png",
+  author: "Tanishq Manuja",
+  description: "A minimal, responsive and SEO-friendly Astro blog.",
+  url: "https://tqblog.pages.dev/",
 };
 
 export const POSTS_PER_PAGE = 3;

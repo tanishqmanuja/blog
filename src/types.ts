@@ -1,9 +1,9 @@
 export type Site = {
-  website: string;
+  url: string;
   author: string;
-  desc: string;
+  description: string;
   title: string;
-  ogImage: string;
+  ogImage?: string;
 };
 
 export type SocialObjects = {

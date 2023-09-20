@@ -16,13 +16,13 @@ export interface Props {
 const {
   title = SITE.title,
   author = SITE.author,
-  description = SITE.desc,
+  description = SITE.description,
   ogImage = SITE.ogImage,
   canonicalURL = new URL(Astro.url.pathname, Astro.site).href,
 } = Astro.props;
 
-const socialImageURL = new URL(
-  ogImage ? ogImage : SITE.ogImage,
+const normalizedOgImageUrl = new URL(
+  ogImage ?? SITE.ogImage ?? "og.png",
   Astro.url.origin,
 ).href;
 ---
@@ -47,14 +47,14 @@ const socialImageURL = new URL(
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalURL} />
-    <meta property="og:image" content={socialImageURL} />
+    <meta property="og:image" content={normalizedOgImageUrl} />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content={canonicalURL} />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content={socialImageURL} />
+    <meta property="twitter:image" content={normalizedOgImageUrl} />
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

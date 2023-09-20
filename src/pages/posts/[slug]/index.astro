@@ -2,24 +2,24 @@
 import { type CollectionEntry, getCollection } from "astro:content";
 import Posts from "@/layouts/Posts.astro";
 import PostDetails from "@/layouts/PostDetails.astro";
-import getSortedPosts from "@/utils/getSortedPosts";
-import getPageNumbers from "@/utils/getPageNumbers";
-import slugify from "@/utils/slugify";
 import { POSTS_PER_PAGE } from "@/config";
+import { isPublishable, sortByDate } from "@/utils/post";
+import { range } from "@/utils/array";
 
 export interface Props {
   post: CollectionEntry<"blog">;
 }
 
 export async function getStaticPaths() {
-  const posts = await getCollection("blog", ({ data }) => !data.draft);
+  const posts = await getCollection("blog", isPublishable);
 
   const postResult = posts.map(post => ({
-    params: { slug: slugify(post.data) },
+    params: { slug: post.slug },
     props: { post },
   }));
 
-  const pagePaths = getPageNumbers(posts.length).map(pageNum => ({
+  const totalPageCount = Math.ceil(posts.length / POSTS_PER_PAGE);
+  const pagePaths = range(1, totalPageCount).map(pageNum => ({
     params: { slug: String(pageNum) },
   }));
 
@@ -29,20 +29,21 @@ export async function getStaticPaths() {
 const { slug } = Astro.params;
 const { post } = Astro.props;
 
-const posts = await getCollection("blog");
+const posts = await getCollection("blog", isPublishable).then(posts =>
+  posts.sort(sortByDate),
+);
 
-const sortedPosts = getSortedPosts(posts);
-
-const totalPages = getPageNumbers(sortedPosts.length);
+const totalPageCount = Math.ceil(posts.length / POSTS_PER_PAGE);
+const pageNumbers = range(1, totalPageCount);
 
 const currentPage =
-  slug && !isNaN(Number(slug)) && totalPages.includes(Number(slug))
+  slug && !isNaN(Number(slug)) && pageNumbers.includes(Number(slug))
     ? Number(slug)
     : 0;
 const lastPost = currentPage * POSTS_PER_PAGE;
 const startPost = lastPost - POSTS_PER_PAGE;
 
-const paginatedPosts = sortedPosts.slice(startPost, lastPost);
+const paginatedPosts = posts.slice(startPost, lastPost);
 ---
 
 {
@@ -52,7 +53,7 @@ const paginatedPosts = sortedPosts.slice(startPost, lastPost);
     <Posts
       posts={paginatedPosts}
       pageNum={currentPage}
-      totalPages={totalPages.length}
+      totalPages={pageNumbers.length}
     />
   )
 }
