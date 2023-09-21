@@ -1,6 +1,6 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
-import react from "@astrojs/react";
+import preact from "@astrojs/preact";
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import remarkCallouts from "remark-callouts";
@@ -14,7 +14,7 @@ export default defineConfig({
     tailwind({
       applyBaseStyles: false,
     }),
-    react(),
+    preact(),
     sitemap(),
     tqblogExpressiveCode(),
   ],

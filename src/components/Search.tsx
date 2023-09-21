@@ -1,6 +1,7 @@
 import type { CollectionEntry } from "astro:content";
+import type { TargetedEvent } from "preact/compat";
+import { useEffect, useRef, useState, useMemo } from "preact/hooks";
 import Fuse from "fuse.js";
-import { useEffect, useRef, useState, useMemo } from "react";
 import Card from "@/components/Card";
 
 export type SearchItem = CollectionEntry<"blog">;
@@ -21,7 +22,7 @@ export default function SearchBar({ searchList }: Props) {
     null,
   );
 
-  const handleChange = (e: React.FormEvent<HTMLInputElement>) => {
+  const handleChange = (e: TargetedEvent<HTMLInputElement>) => {
     setInputVal(e.currentTarget.value);
   };
 
@@ -85,7 +86,7 @@ export default function SearchBar({ searchList }: Props) {
           type="text"
           name="search"
           value={inputVal}
-          onChange={handleChange}
+          onInput={handleChange}
           autoComplete="off"
           autoFocus
           ref={inputRef}
