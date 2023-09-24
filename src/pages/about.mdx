@@ -3,12 +3,15 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
+import { Image } from "astro:assets";
+import dev from "../assets/dev.svg";
+
 ## Tanishq Manuja
 
 Hi 👋, I am a dedicated Full-Stack Web Developer with a knack for crafting digital experiences that seamlessly blend functionality and aesthetics. With a keen eye for detail and a strong foundation in both front-end and back-end technologies, I thrive on turning ideas into dynamic, user-friendly web applications.
 
 <div>
-  <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
+  <Image src={dev} class="mx-auto sm:w-1/2" alt="coding dev illustration" />
 </div>
 
 ## Tech Stack
