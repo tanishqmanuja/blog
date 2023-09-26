@@ -2,6 +2,7 @@
 /*
 
 # Except these files & folders
+!/integrations
 !/src
 !/public
 !/.github
