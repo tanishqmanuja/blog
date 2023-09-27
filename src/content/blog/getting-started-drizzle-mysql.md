@@ -198,3 +198,7 @@ drizzle-kit provides much more functionality then what we just used. Still I am 
   /* Dependencies */
 }
 ```
+
+## Project Links
+
+- Repo: [https://github.com/tanishqmanuja/boilerplate.drizzle-mysql-node](https://github.com/tanishqmanuja/boilerplate.drizzle-mysql-node)
