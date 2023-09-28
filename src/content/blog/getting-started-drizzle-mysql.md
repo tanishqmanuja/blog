@@ -1,6 +1,6 @@
 ---
 title: Getting Started with Drizzle ORM, MySQL & Typescript
-description: Learn the Basics of Drizzle ORM, MySQL, and Typescript in this Getting Started Guide
+description: Learn the Basics of Drizzle ORM, MySQL, and Typescript in this Getting Started Guide.
 date: 2023-09-16T09:00:35Z
 tags:
   - boilerplate
