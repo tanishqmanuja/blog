@@ -3,7 +3,7 @@ import type { Site, SocialObjects } from "./types";
 export const SITE: Site = {
   title: "TqBlog",
   author: "Tanishq Manuja",
-  description: "A minimal, responsive and SEO-friendly Astro blog.",
+  description: "Tanishq Manuja's Minimal Blog, build with Astro.",
   url: "https://tqblog.pages.dev/",
 };
 
