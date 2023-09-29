@@ -183,7 +183,7 @@ pnpm tsx scripts/migrate.ts
 
 drizzle-kit provides much more functionality then what we just used. Still I am sharing a snippet of what my package.json commonly looks in a drizzle project.
 
-```json title="package.json" {4-10}
+```json title="package.json"
 {
   /* Common Stuff */
   "scripts": {
