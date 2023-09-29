@@ -5,7 +5,7 @@
   --callout-bg-color: #161616;
 }
 
-blockquote.callout {
+.callout {
   background: #f2f3f5;
   background: var(--callout-bg-color);
   border-radius: 2px;
@@ -23,15 +23,14 @@ blockquote.callout {
 .callout-title > strong {
   font-weight: 700;
 }
-.blockquote,
-.callout-content {
+.callout .callout-content {
   padding: 10px 20px;
 }
 .blockquote-heading {
   margin: 5px 0 !important;
   padding: 0 !important;
 }
-.blockquote > p,
+.callout > p,
 .callout-content > p {
   font-weight: 400;
   margin: 5px 0;
@@ -42,9 +41,9 @@ blockquote.callout {
 .callout-title > strong {
   line-height: 1.5;
 }
-.blockquote > p:before,
-.callout p:before,
-p:after {
+
+.callout-content > p:before,
+.callout-content > p:after {
   display: none;
 }
 
