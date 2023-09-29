@@ -1,5 +1,3 @@
-@import "remark-callouts/styles.css";
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,7 +14,7 @@
     --callout-bg-color: #f2f3f5;
   }
   html[data-theme="dark"] {
-    --color-fill: 33, 39, 55;
+    --color-fill: 26, 31, 44;
     --color-text-base: 234, 237, 243;
     --color-accent: 255, 107, 1;
     --color-card: 52, 63, 96;
@@ -56,7 +54,7 @@
     @apply prose-headings:!mb-3 prose-headings:!text-skin-base 
     prose-h3:italic prose-p:!text-skin-base 
     prose-a:!text-skin-base prose-a:!decoration-dashed prose-a:underline-offset-8
-    hover:prose-a:text-skin-accent prose-blockquote:!border-l-skin-accent
+    hover:prose-a:text-skin-accent 
     prose-blockquote:border-opacity-50 prose-blockquote:opacity-80
     prose-figcaption:!text-skin-base prose-figcaption:opacity-70
     prose-strong:!text-skin-base
@@ -93,11 +91,21 @@
   .prose h2#table-of-contents + p {
     @apply hidden;
   }
-  .prose .callout {
-    word-wrap: break-word;
+
+  .prose blockquote {
+    @apply border-l-skin-accent;
   }
-  .prose .callout svg {
-    fill: none;
+
+  /* Expressive Code Styling */
+  .prose .ec > .frame > pre {
+    @apply sm:border-none;
+  }
+
+  .prose
+    .ec
+    > figure.frame.has-title:not(.is-terminal)
+    > figcaption.header::before {
+    @apply sm:border-none;
   }
 
   /* ===== scrollbar ===== */

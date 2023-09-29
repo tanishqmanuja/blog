@@ -1,0 +1,56 @@
+:root {
+  --callout-bg-color: #f2f3f5;
+}
+:root.dark {
+  --callout-bg-color: #161616;
+}
+
+blockquote.callout {
+  background: #f2f3f5;
+  background: var(--callout-bg-color);
+  border-radius: 2px;
+  font-style: normal;
+}
+.callout {
+  padding: 0 !important;
+}
+.callout-title {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+.callout-title > strong {
+  font-weight: 700;
+}
+.blockquote,
+.callout-content {
+  padding: 10px 20px;
+}
+.blockquote-heading {
+  margin: 5px 0 !important;
+  padding: 0 !important;
+}
+.blockquote > p,
+.callout-content > p {
+  font-weight: 400;
+  margin: 5px 0;
+}
+.callout-title p {
+  margin: 0;
+}
+.callout-title > strong {
+  line-height: 1.5;
+}
+.blockquote > p:before,
+.callout p:before,
+p:after {
+  display: none;
+}
+
+.prose .callout {
+  word-wrap: break-word;
+}
+.prose .callout svg {
+  fill: none;
+}
