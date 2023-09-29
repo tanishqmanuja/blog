@@ -47,7 +47,7 @@ pnpm i -D @types/express
 
 ### Configuring Typescript
 
-We will be using ESM (ECMA Script Module) syntax.So, we need to add `"type": "module"` to package.json
+We will be using ESM (ECMA Script Module) syntax. So, we need to add an extra property called type with value as module to package.json
 
 ```json title="package.json" {4}
 {
@@ -75,7 +75,7 @@ Then add a tsconfig.json file to the root of project
 }
 ```
 
-You can use your own tsconfig.json file or checkout a cool repo called [bases](https://github.com/tsconfig/bases/).
+You can use your own tsconfig.json file or checkout a cool repo called [@tsconfig/bases](https://github.com/tsconfig/bases/).
 
 ### Loading Env Variables
 
